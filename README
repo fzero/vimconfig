@@ -41,6 +41,9 @@ All of them work on plain Vim, meaning that you won't need to have MacVim (or
 even a mac!) to use this setup. In fact all my MacVim specific configs are
 inside an 'if' statement in vimrc, so you really don't need to worry about it.
 
+I also included additional Python, Wikipedia and Markdown syntax files for your
+cheerful and colorful enjoyment.
+
 To use this on Mac/Linux, just donwload/clone/copy it somewhere and either
 rename or link the files appropriately (vim/ -> ~/.vim and vimrc -> ~/.vimrc).
 This should work on Windows too, but seriously dude: why?
