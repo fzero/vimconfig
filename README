@@ -35,6 +35,9 @@ http://github.com/tpope/vim-rails
 Surround - Tag surrounding goodness
 http://github.com/tpope/vim-surround
 
+vim-cucumber - Cucumber test suite addons
+http://github.com/tpope/vim-cucumber
+
 (Yeah, Tim Pope rules -- you should follow him on Github.)
 
 All of them work on plain Vim, meaning that you won't need to have MacVim (or
