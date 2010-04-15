@@ -1,0 +1,51 @@
+OHAI!
+
+This is my Vim/MacVim setup. I used several editors and IDEs in the past, but
+Vim is has some pretty interesting features that you can't find anywhere else,
+such as:
+
+- Portability. Every OS I've ever heard of has some version of Vi installed,
+  and generally it's Vim.
+
+- Pretty good speed, even with tons of plugins installed (take that, Emacs).
+
+- Let's face it: geek cred.
+
+Yeah, it can be a little hard to get up to speed with it, but vimtutor helps a
+lot. In a few minutes you'll be hjkl-ing your way through documents, deleting
+lines with dd and cw-ing mistakes before the inevitable :w. Good times.
+
+This setup includes several interesting plugins to make your life easier. Want
+a list? there you go:
+
+EasyGrep - Easy filesystem grepping goodness
+http://www.vim.org/scripts/script.php?script_id=2438
+
+NERDTree - A cool file tree explorer split
+http://www.vim.org/scripts/script.php?script_id=1658
+
+SearchComplete - Tab completion on searches
+http://www.vim.org/scripts/script.php?script_id=474
+
+Fugitive - Git plugin
+http://github.com/tpope/vim-fugitive
+
+Rails - Self-explanatory
+http://github.com/tpope/vim-rails
+
+Surround - Tag surrounding goodness
+http://github.com/tpope/vim-surround
+
+(Yeah, Tim Pope rules -- you should follow him on Github.)
+
+All of them work on plain Vim, meaning that you won't need to have MacVim (or
+even a mac!) to use this setup. In fact all my MacVim specific configs are
+inside an 'if' statement in vimrc, so you really don't need to worry about it.
+
+To use this on Mac/Linux, just donwload/clone/copy it somewhere and either
+rename or link the files appropriately (vim/ -> ~/.vim and vimrc -> ~/.vimrc).
+This should work on Windows too, but seriously dude: why?
+
+Have fun!
+- FZero
+
