@@ -26,6 +26,9 @@ http://www.vim.org/scripts/script.php?script_id=1658
 SearchComplete - Tab completion on searches
 http://www.vim.org/scripts/script.php?script_id=474
 
+NERDCommenter - Easy commenting/uncommenting
+http://www.vim.org/scripts/script.php?script_id=1218
+
 Fugitive - Git plugin
 http://github.com/tpope/vim-fugitive
 
