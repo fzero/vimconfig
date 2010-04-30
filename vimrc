@@ -14,6 +14,9 @@ map <silent> <c-t> :NERDTree <cr>
 " Control-\ = Wrap on/off
 map <silent> <c-\> :set wrap! <cr>
 
+" Control-L = Fuzzy-find file
+map <silent> <c-l> :FufFile <cr>
+
 " Change which file opens after executing :Rails command
 let g:rails_default_file='config/database.yml'
 
@@ -62,8 +65,8 @@ if has("gui_macvim")
   colorscheme railscasts
   set mousehide  " Hide mouse after chars typed
   set mouse=a  " Mouse in all modes
-  set lines=68 " window height
-  set columns=90 " and width
+  set lines=78 " window height
+  set columns=200 " and width
   set bg=dark 
   set transparency=4
   let macvim_hig_shift_movement = 1
