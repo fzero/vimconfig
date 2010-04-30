@@ -14,6 +14,9 @@ map <silent> <c-t> :NERDTree <cr>
 " Control-\ = Wrap on/off
 map <silent> <c-\> :set wrap! <cr>
 
+" Control-L = Fuzzy-find file
+map <silent> <c-l> :FufFile <cr>
+
 " Change which file opens after executing :Rails command
 let g:rails_default_file='config/database.yml'
 
