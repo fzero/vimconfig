@@ -1,12 +1,12 @@
 OHAI!
 
 This is my Vim/MacVim setup. I used several editors and IDEs in the past, but
-Vim is has some pretty interesting features that you can't find anywhere else,
+Vim has some pretty interesting features that you can't find anywhere else,
 such as:
 
 - Portability. Every OS I've ever heard of has some version of Vim available.
 
-- Pretty good speed, even with tons of plugins installed (take that, Emacs).
+- It's FAST, even with tons of plugins installed (take that Emacs and Textmate!).
 
 - Let's face it: geek cred.
 
