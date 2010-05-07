@@ -65,8 +65,8 @@ if has("gui_macvim")
   colorscheme railscasts
   set mousehide  " Hide mouse after chars typed
   set mouse=a  " Mouse in all modes
-  set lines=78 " window height
-  set columns=200 " and width
+  set lines=52 " window height
+  set columns=120 " and width
   set bg=dark 
   set transparency=4
   let macvim_hig_shift_movement = 1
