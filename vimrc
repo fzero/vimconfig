@@ -1,13 +1,13 @@
 set nocompatible
 syntax on
 filetype plugin indent on
- 
+
 " Minibuffer Explorer Settings
 let g:miniBufExplMapWindowNavVim = 1
 let g:miniBufExplMapWindowNavArrows = 1
 let g:miniBufExplMapCTabSwitchBufs = 1
 let g:miniBufExplModSelTarget = 1
- 
+
 " Control-T = NERDtree
 map <silent> <c-t> :NERDTree <cr>
 
@@ -16,6 +16,23 @@ map <silent> <c-\> :set wrap! <cr>
 
 " Control-L = Fuzzy-find file
 map <silent> <c-l> :FufFile <cr>
+
+" Removes trailing spaces
+function TrimWhiteSpace()
+  %s/\s*$//
+  ''
+:endfunction
+
+" Automatically trim unwanted spaces from files.
+" set list listchars=trail:.,extends:>
+" autocmd FileWritePre * :call TrimWhiteSpace()
+" autocmd FileAppendPre * :call TrimWhiteSpace()
+" autocmd FilterWritePre * :call TrimWhiteSpace()
+" autocmd BufWritePre * :call TrimWhiteSpace()
+
+" Trim whitespaces from files on F2
+map <F2> :call TrimWhiteSpace()<CR>
+map! <F2> :call TrimWhiteSpace()<CR>
 
 " Change which file opens after executing :Rails command
 let g:rails_default_file='config/database.yml'
@@ -29,7 +46,7 @@ set nu  " Line numbers on
 set nowrap  " Line wrapping off
 set linebreak " But if we wrap, make it right
 set timeoutlen=250  " Time to wait after ESC (default causes an annoying delay)
- 
+
 " Formatting (some of these are for coding in C and C++)
 set ts=2  " Tabs are 2 spaces
 set bs=2  " Backspace over everything in insert mode
@@ -61,13 +78,13 @@ set cul " highlight current line
 
 " macvim specific
 if has("gui_macvim")
-" set cuc " highlight current column 
+" set cuc " highlight current column
   colorscheme railscasts
   set mousehide  " Hide mouse after chars typed
   set mouse=a  " Mouse in all modes
   set lines=52 " window height
   set columns=120 " and width
-  set bg=dark 
+  set bg=dark
   set transparency=4
   let macvim_hig_shift_movement = 1
   set go=egmrLi
