@@ -17,6 +17,23 @@ map <silent> <c-\> :set wrap! <cr>
 " Control-L = Fuzzy-find file
 map <silent> <c-l> :FufFile <cr>
 
+" Removes trailing spaces
+function TrimWhiteSpace()
+  %s/\s*$//
+  ''
+:endfunction
+
+" Automatically trim unwanted spaces from files.
+" set list listchars=trail:.,extends:>
+" autocmd FileWritePre * :call TrimWhiteSpace()
+" autocmd FileAppendPre * :call TrimWhiteSpace()
+" autocmd FilterWritePre * :call TrimWhiteSpace()
+" autocmd BufWritePre * :call TrimWhiteSpace()
+
+" Trim whitespaces from files on F2
+map <F2> :call TrimWhiteSpace()<CR>
+map! <F2> :call TrimWhiteSpace()<CR>
+
 " Change which file opens after executing :Rails command
 let g:rails_default_file='config/database.yml'
 
